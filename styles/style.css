@@ -1,0 +1,174 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text: #111;
+    --color-background: #eee;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2d2d2d;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: flex;
+    /*zodat de afbeelding naast de tekst kan staan en niet onder elkaar komt te staan, is niet mooi */
+    align-items: center;
+    /* zodat het mooi gecentreerd is met de header box */
+}
+
+header img {
+    width: 4em;
+    /*grootte van de afbeelding*/
+}
+
+nav {
+    margin-left: auto;
+    /* zorgt ervoor dat de icoontjes altijd recht blijven staan */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /*zodat het naast elkaar staat en niet onder elkaar. */
+}
+
+nav ul li {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    margin-left: 1.2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    /* geen streep onder de icoontjes */
+    padding: 0.5em;
+    /* ruimte tussen de icoontjes */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {}
+
+h3 {
+    color: dimgrey;
+
+}
+
+button {
+    /* https://www.w3schools.com/css/css3_buttons.asp voor button layout
+    https://www.w3schools.com/howto/howto_css_center_button.asp*/
+    background-color: white;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#Sectie1 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolommen die allemaal even breed zijn 1fr betekend dat alle 4 de kolommen een evengroot aandeel krijgen van de ruimte waardoor ze mooi op 1 lijn liggen */
+    /* 4 naast elkaar */
+    margin: 2em;
+    grid-gap: 1em;
+    padding: 0;
+}
+
+#Sectie1 li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#Sectie1 img {
+    width: 100%;
+    /* Afbeeldingen responsief */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    /* 2 items per rij voor tablets */
+    #Sectie1 ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+#Sectie2 ul {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#Sectie2 li {
+    min-width: 20%;
+    /* Elke afbeelding neemt 20% in beslag */
+    list-style-type: none;
+}
+
+#Sectie2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Sectie 3 - Responsieve layout */
+#Sectie3 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 naast elkaar voor grotere schermen */
+    margin: 2em;
+    list-style-type: none;
+    grid-gap: 5em;
+    text-align: center;
+}
+
+#Sectie3 img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 768px) {
+
+    /* 1 item per rij voor mobiel */
+    #Sectie3 ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* pagina 2 css wat nodig is */
+
+#pagina2{
+    display: grid;
+
+}
