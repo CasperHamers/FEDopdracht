@@ -1,0 +1,103 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text: #111;
+    --color-background: #eee;
+}
+
+body {
+    font-family: futura-pt, FuturaStd, Helvetica, Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2d2d2d;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: flex;
+    /*zodat de afbeelding naast de tekst kan staan en niet onder elkaar komt te staan, is niet mooi */
+    align-items: center;
+    /* zodat het mooi gecentreerd is met de header box */
+}
+
+header img {
+    width: 4em;
+    /*grootte van de afbeelding*/
+}
+
+header button {
+
+}
+
+nav {
+    margin-left: auto;
+    /* zorgt ervoor dat de icoontjes altijd recht blijven staan */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /*zodat het naast elkaar staat en niet onder elkaar. */
+}
+
+nav ul li {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    margin-left: 1.2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    /* geen streep onder de icoontjes */
+    padding: 0.5em;
+    /* ruimte tussen de icoontjes */
+}
+
+footer {
+    display: flex;
+justify-content: space-around;
+    background-color: #eeeeee;
+    font-size: 0.8em;
+}
+
+footer ul {
+    list-style-type: none;
+    max-width: 100%;
+        max-width: 80em;
+}
+
+footer li {
+    padding: 0.5em;
+}
+
+footer img {
+    height: 0.8em;
+    width: 0.8em;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer img:nth-of-type(1){
+    display: inline;
+}
