@@ -39,22 +39,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Asos: https://www.asos.com/nl/heren/
 
   #### Screenshot(s) van de eerste pagina (small screen):
-  Asos homepage: https://www.asos.com/nl/heren/trends/denim/cat/?cid=17102&ctaref=lp%7Cmw%7Cvideohero%7C1%7Cedit%7Cdenim&currentpricerange=10-295&sort=priceasc
-  <img src="images/Asos%20homepage%20foto%201.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+  Asos homepage: Asos: https://www.asos.com/nl/heren/
 
-  <img src="images/Asos%20homepage%20foto%202.png" width="375px" alt="Dit is de homepage als je naar beneden scrollt, hier zie je in collums allerlei verschillende producten en deze producten zijn ook nog afgeprijsd naar de goedkoopste prijs. Hier heb ik expres voor gekozen omdat dat ervoor zorgt dat het nog wat uitdagender wordt om te coderen"
+  <img src="readme-images/readmefotos/homepage/afbeelding1.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+    <img src="readme-images/readmefotos/homepage/afbeelding2.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+    <img src="readme-images/readmefotos/homepage/afbeelding3.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+    <img src="readme-images/readmefotos/homepage/afbeelding4.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+    <img src="readme-images/readmefotos/homepage/afbeelding5.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
+    <img src="readme-images/readmefotos/homepage/afbeelding6.png" width="375px" alt="Dit is de homepage van Asos, dit is het eerste wat je ziet als je op de site komt">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  asos productscherm; https://www.asos.com/nl/asos-design/asos-design-wijde-halflange-denim-short-in-zwart-met-wassing/prd/204645003#colourWayId-204645007
-
-  <img src="images/Asos%20productpage%20foto%201.png" width="375px" alt="Dit is een van de producten die ik heb uitgekozen want deze is afgeprijst en dus uitdagender. Dit is ook het eerste wat je ziet als je op het product klikt.">
-
-  <img src="images/Asos%20productpage%20foto%202.png" width="375px" alt="Dit krijg je te zien als je naar beneden scrolt">
-
-  <img src="images/Asos%20productpage%20foto%203.png" width="375px" alt="Als je verder naar benenden scrolt.">
-
-  <img src="images/Asos%20productpage%20foto%204.png" width="375px" alt="Dit is de onderkant van deze pagina">
+  asos productscherm; https://www.asos.com/nl/asos-design/asos-design-oversized-recht-t-shirt-van-220g-m-zware-stof-met-straatprint-in-groen-met-wassing/prd/207329759
+    <img src="readme-images/readmefotos/pagina2/afbeelding1.png" width="375px" alt="Dit is een product pagina. Dit is de bovenkant">
+    <img src="readme-images/readmefotos/pagina2/afbeelding2.png" width="375px" alt="Dit is een product pagina. Dit is als je naar beneden scrolt">
+    <img src="readme-images/readmefotos/pagina2/afbeelding3.png" width="375px" alt="Dit is een product pagina. Dit is als je naar beneden scrolt">
+    
 
 
 </details>
