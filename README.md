@@ -135,11 +135,19 @@ ben hier dus ook helaas niet bij geweest.
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yasmine Uaali  | Sinem Uslu         |Noah Baggerman| Casper Hamers    |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |twee sections    | en dit             | en ik dit    | en dan ik dat    |
+  |naast elkaar 
+  krijgen         | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+  Yasmine had de volgende vraag: Hoe krijg ik twee secties naast elkaar.
+  Sinem : Had dezelfde vraag als Yasmine en heeft ook nog de vraag, hoe zorg ik ervoor dat de image van een knop veranderd zodra ik erop klik.
+  Casper: Is ook wel nieuwsgierig naar de twee secties vraag. En heeft ook nog de volgende vragen: Hoe maak ik een carousel (slideshow) van verschillende producten die wel mooi in een blok blijven.
+  Hoe zorg ik ervoor dat ik een dropdown krijg die bepaalde informatie verbergt en die je dus alleen kan zien zodra je de dropdown aanklikt. Als laatste, hoe zorg je ervoor dat bepaalde aspecten van de website weg gaan naarmate je de website kleiner maakt en dus ook hoe komen ze weer terug als je de website weer groter maakt. Video werkt ook niet.
+  
 
 
   ### Verslag van meeting
