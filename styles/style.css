@@ -1,11 +1,7 @@
-main {
-    max-width: 80em;
-    margin: 0 auto;
-    padding: 20px;
+h1 {
+    position: absolute;
+    visibility: hidden;
 }
-
-
-h1 {}
 
 h2:nth-of-type(1) {
     text-align: center;
@@ -102,6 +98,36 @@ section:nth-of-type(3) ul {
 section:nth-of-type(3) img {
     width: 100%;
     height: auto;
+
+}
+
+section:nth-of-type(4) {
+    display: block;
+    background: rgb(255, 56, 92);
+    background: linear-gradient(90deg, rgba(255, 56, 92, 1) 0%, rgba(247, 153, 186, 1) 100%);
+    /* Met gebruik van https://cssgradient.io/ om dezelfde gradient te maken als op asos zelf */
+    text-align: center;
+    width: 100%;
+}
+
+section:nth-of-type(4) button:nth-of-type(1) {
+    border-radius: 2em;
+    margin-top: 1em;
+    background: transparent;
+    font-size: 1.1em;
+    padding 0;
+    border-color: black;
+
+}
+
+section:nth-of-type(4) button:nth-of-type(2) {
+    border-radius: 2em;
+    margin-bottom: 1em;
+    background: black;
+    font-size: 1.1em;
+    padding 0;
+    color: white;
+
 
 }
 

@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: futura-pt, FuturaStd, Helvetica, Arial,sans-serif;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -43,9 +43,12 @@ header img {
     /*grootte van de afbeelding*/
 }
 
-header button {
-
+main {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 20px;
 }
+
 
 nav {
     margin-left: auto;
@@ -68,29 +71,28 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
-    /* geen streep onder de icoontjes */
     padding: 0.5em;
-    /* ruimte tussen de icoontjes */
 }
 
 footer {
     display: flex;
-justify-content: space-around;
+    justify-content: space-around; /* zorgt ervoor dat het netjes gelijk gehouden wordt binnen de grid */
     background-color: #eeeeee;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    width: 100%;
 }
 
 footer ul {
     list-style-type: none;
-    max-width: 100%;
-        max-width: 80em;
+    max-width: 80em;
 }
 
 footer li {
     padding: 0.5em;
 }
 
-footer img {
+footer li img {
+    display: inline-flex;
     height: 0.8em;
     width: 0.8em;
     margin: 0;
@@ -98,6 +100,6 @@ footer img {
 
 }
 
-footer img:nth-of-type(1){
+footer:nth-of-type(1) img {
     display: inline;
-}
+
