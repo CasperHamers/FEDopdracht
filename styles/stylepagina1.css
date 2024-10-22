@@ -1,39 +1,239 @@
-h1 {
-    position: absolute;
-    visibility: hidden;
-}
-h2 {
+/* Staandaard dingetjes */
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
 
 }
 
-section {
-    margin-bottom: 20px;
+ul {
+    padding: 0;
 }
 
-picture {
-    display: flex;
+a {
+    text-decoration: none;
+    color: var(--zwart);
 }
 
-picture img {
-    width: 100%;
-    max-width: 35em;
+p {
+    margin: 0;
+    margin-bottom: 1em;
+    ;
 }
-
-/* Selectie en knoppen */
-select {
-    margin-top: 0.5em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    width: 100%;
-}
-
 button {
-    background-color: #018849;
-    color: white;
-    border: none;
-    margin-top: 0.5em;
-    padding: 1em;
-    border-radius: 0.5em;
-    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7em;
+}
+video {
+    max-width: 100%;
+    /* Zorg dat de video niet groter is dan zijn container */
+    display: block;
+    margin-top: 2em;
+
 
 }
+
+h2:nth-of-type(1) {
+    text-align: center;
+}
+
+/* begin van de eerste sectie */
+
+main section:nth-of-type(1) {
+    display: flex;
+    position: relative;
+    width: fit-content;
+}
+
+main section:nth-of-type(1) button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* begin van sectie 2 */
+
+main section:nth-of-type(2) {
+    display: flex;
+    position: relative;
+}
+
+main section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 kolommen die allemaal even breed zijn 1fr betekend dat alle 4 de kolommen een evengroot aandeel krijgen van de ruimte waardoor ze mooi op 1 lijn liggen */
+    /* 4 naast elkaar */
+    grid-gap: 1em;
+}
+
+main section:nth-of-type(2) li {
+    list-style-type: none;
+    text-align: center;
+}
+
+main section:nth-of-type(2) a {
+    display: grid;
+
+}
+
+main section:nth-of-type(2) img {
+    width: 100%;
+    /* Afbeeldingen responsief */
+    height: auto;
+    order: -1;
+}
+
+
+/* begin van sectie 3 */
+
+main section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main section:nth-of-type(3) ul {
+    display: flex;
+    overflow: auto;
+}
+
+main section:nth-of-type(3) li {
+    list-style-type: none;
+
+    flex-shrink: 0;
+}
+
+main section:nth-of-type(3) img {
+    width: 20em;
+    height: auto;
+    object-fit: cover;
+}
+
+main section:nth-of-type(3) p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 8em;
+}
+
+main > section:nth-of-type(3) nav ul li a{
+display:block;
+height:1em;
+aspect-ratio:3/0.5;
+background-color:rgb(65, 65, 65);
+border-radius:.5em;
+    transition: translate .3s;
+}
+
+
+main section:nth-of-type(3) button {
+    align-self: center;
+    background:var(--zwart);
+    color: var(--wit);
+    font-weight: 700;
+    width: 10em;
+    padding: 0.5;
+}
+/* begin van sectie 4 */
+
+main section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(4) ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 naast elkaar voor grotere schermen */
+    list-style-type: none;
+    grid-gap: 5em;
+    text-align: center;
+}
+
+main section:nth-of-type(4) li {
+    flex-shrink: 0;
+}
+
+main section:nth-of-type(4) a {
+    display: grid;
+}
+
+main section:nth-of-type(4) img {
+    width: 100%;
+    height: auto;
+    order: -1;
+
+}
+
+main section:nth-of-type(4) button {
+    padding-right: 4em;
+    padding-left: 4em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    background-color: var(--wit);
+
+}
+
+/* begin van sectie 5 */
+
+aside {
+    display: block;
+    background: rgb(255, 56, 92);
+    background: var(--gradient);
+    /* Met gebruik van https://cssgradient.io/ om dezelfde gradient te maken als op asos zelf */
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: 2em;
+}
+
+aside button:nth-of-type(1) {
+    border-radius: 2em;
+    margin-top: 1em;
+    background: transparent;
+    font-size: 1.1em;
+    padding 0;
+    border-color: black;
+
+}
+
+aside button:nth-of-type(2) {
+    border-radius: 2em;
+    margin-bottom: 1em;
+    background: black;
+    font-size: 1.1em;
+    padding 0;
+    color: white;
+
+
+}
+
+aside:nth-of-type(2) {
+    background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+
+/* @media voor responsive design */
+
+@media (max-width: 768px) {
+
+    /* 2 items per rij voor tablets */
+    main section:nth-of-type(2) ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 1 item per rij voor mobiel */
+    main section:nth-of-type(4) ul {
+        grid-template-columns: 1fr;
+    }

@@ -5,12 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASOS Stijl Website</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylepagina1.css">
     <link rel="stylesheet" href="styles/stylebasis.css">
 </head>
 
 <body>
     <header>
+
+        <button aria-hidden="true"><img src="images/icon/hamburgermenu.png" alt=""></button>
+
+        <nav>
+            <button aria-hidden="true">sluit</button>
+            <button>
+                Dames
+            </button>
+
+            <button>Heren</button>
+            <ul>
+                <li>
+                    <p>Startpagina</p>
+
+                </li>
+                <li>
+                    <p>tot 30% Korting!</p>
+
+                </li>
+                <li>
+                    <p>Nieuw</p>
+
+                </li>
+                <li>
+                    <p>Kleding</p>
+                </li>
+                <li>
+                    <p>Trending</p>
+                </li>
+                <li>
+                    <p>Accessoires</p>
+                </li>
+                <li>
+                    <p>Sneakers</p>
+                </li>
+                <li>
+                    <p>Schoenen</p>
+                </li>
+                <li>
+                    <p>Sportkleding</p>
+                </li>
+                <li>
+                    <p>Merken</p>
+                </li>
+                <li>
+                    <p>Face + Body</p>
+                </li>
+                <li>
+                    <p>Marketplace</p>
+                    <p>Vintage & Merken</p>
+                </li>
+                <li>
+                    <p>Sale: Tot 60% korting</p>
+                </li>
+                <li>
+                    <p>Meer Asos</p>
+                </li>
+
+
+            </ul>
+        </nav>
 
         <a href="index.html">
             <img src="images/asos%20logo.svg" alt="Logo van asos"></a>
@@ -26,25 +87,32 @@
 
     <main>
 
-        <h1>Welkom op de homepage van Asos, Dit is een online kleding winkel. U bevindt zich nu op de heren afdeling.</h1>
+        <h1 class="visually-hidden">Welkom op de homepage van Asos, Dit is een online kleding winkel. U bevindt zich nu op de heren afdeling.</h1>
 
         <section>
-            <video src="images/homepagevideoasos/videotest.mp4" type="video/mp4"></video> <!-- met behulp van https://www.w3schools.com/tags/att_video_loop.asp -->
+            <h2 class="visually-hidden">Hier speelt een video af waar je wat kleding kan zien</h2>
+
+            <video src="images/homepagevideoasos/videotest.mp4" type="video/mp4" controls></video> <!-- met behulp van https://www.w3schools.com/tags/att_video_loop.asp -->
+            <!-- <button>hier moet nog een knop komen</button> -->
+        </section>
+
+        <section>
+            <h2 class="visually-hidden">hier is een lijst met 4 artikelen. dit zijn de nieuwste artikelen die uit zijn gekomen op asos en vaak ook favoriet zijn.</h2>
             <ul>
                 <li>
                     <article>
                         <a href="pagina2.html">
+                            <h3>laatste drops</h3>
                             <img src="images/afbeeldingHomepage/Section1/Blauwvest.png" alt="Afbeelding van een blauw vest">
-                            <h2>LAATSTE DROPS</h2>
                             <p>Fresh Favo's</p>
                         </a>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <a href="pagina2.html">
+                        <a href="#">
+                            <h3>Nieuwe sneakers</h3>
                             <img src="images/afbeeldingHomepage/Section1/Bruineschoen.png" alt="Afbeelding van bruine adidas schoenen">
-                            <h2>NIEUWE SNEAKERS</h2>
                             <p>Feat. adidas Originals</p>
                         </a>
                     </article>
@@ -53,8 +121,8 @@
                 <li>
                     <article>
                         <a href="pagina2.html">
+                            <h3>Relaxte tailoring</h3>
                             <img src="images/afbeeldingHomepage/Section1/Pak.png" alt="Afbeelding van een jongen in een grijs pak met een pet op">
-                            <h2>RELAXTE TAILORING</h2>
                             <p>Feat. Bershka + ASOS DESIGN</p>
                         </a>
                     </article>
@@ -64,34 +132,33 @@
                     <article>
 
                         <a href="pagina2.html">
+                            <h3>Next-level knitwear</h3>
                             <img src="images/afbeeldingHomepage/Section1/Bruinvest.png" alt="Afbeelding van een bruin vest">
-                            <h2>NEXT-LEVEL KNITWEAR</h2>
                             <p>Versla de kou</p>
                         </a>
                     </article>
                 </li>
-
-
-
             </ul>
         </section>
 
         <section>
-            <h2>Serieuze favorieten</h2>
+            <h2 class="visually-hidden">Hier staan een aantal kledingstukken die favorieten van gebruikers zijn die de website hebben bekeken</h2>
+
+            <h3>Serieuze favorieten</h3>
 
             <ul>
-                <li>
+                <li id="afbeelding1">
                     <a href="pagina2.html">
                         <img src="images/afbeeldingHomepage/Section2/Groenshirt.png" alt="Afbeelding van een jongen met een groen shirt aan">
                         <p>ASOS DESIGN - Oversized recht T-shirt van 220g/m² zware stof met straatprint in groen met wassing</p>
-                        <h3>€ 24,99</h3>
+                        <h4>€ 24,99</h4>
                     </a>
                 </li>
                 <li>
                     <a href="pagina2.html">
                         <img src="images/afbeeldingHomepage/Section2/natuurprintshirt.png" alt="Afbeelding van een jongen die een natuurprint shirt draagt met het nummer 14 op de rug">
                         <p>ASOS DESIGN - Oversized recht T-shirt van sportief mesh met print</p>
-                        <h3>€ 32,99</h3>
+                        <h4>€ 32,99</h4>
                     </a>
 
                 </li>
@@ -99,133 +166,213 @@
                     <a href="pagina2.html">
                         <img src="images/afbeeldingHomepage/Section2/Halloweenprintshirt.png" alt="Afbeelding van een jongen met een zwarte lange mouwen shirt aan in een halloween thema">
                         <p>ASOS DESIGN - Muscle fit T-shirt met lange mouwen en Halloween-print op de voorkant en mouwen in zwart</p>
-                        <h3>€ 27,99</h3>
+                        <h4>€ 27,99</h4>
                     </a>
                 </li>
                 <li>
                     <a href="pagina2.html">
                         <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
                         <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
-                        <h3>€ 34,99</h3>
+                        <h4>€ 34,99</h4>
                     </a>
                 </li>
+                <li id="afbeelding5">
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
+                        <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
+                        <h4>€ 34,99</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
+                        <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
+                        <h4>€ 34,99</h4>
+                    </a>
+                </li>
+                <li id="afbeelding7">
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
+                        <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
+                        <h4>€ 34,99</h4>
+                    </a>
+                </li>
+
+                   <li>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
+                        <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
+                        <h4>€ 34,99</h4>
+                    </a>
+                </li>
+
+                   <li id="afbeelding9">
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/zwartejoggingbroek.png" alt="Jongen met een zwarte joggingsbroek aan met een witte streep aan de zijkant.">
+                        <p>ASOS DESIGN - Joggingbroek met rechte pijpen en biezen in zwart</p>
+                        <h4>€ 34,99</h4>
+                    </a>
+                </li>
+
+
+
             </ul>
 
-            <button>SHOP NU</button>
+            <nav>
+                <ul>
+                   <li><a href="#afbeelding1"></a></li>
+                    <li><a href="#afbeelding5"></a></li>
+                    <li><a href="#afbeelding7"></a></li>
+                    <li><a href="#afbeelding9"></a></li>
+                </ul>
+            </nav>
+
+            <button>Shop nu</button>
 
         </section>
 
         <section>
+            <h2 class="visually-hidden">hier heb je 2 artikelen met 2 merken en dit zijn de meest populaire merken van de website.</h2>
             <ul>
                 <li>
-                    <aticle>
+                    <article>
                         <a href="pagina2.html">
+                            <h3>Topman</h3>
                             <img src="images/afbeeldingHomepage/Section3/Topman.png" alt="Afbeelding van een man in een pak dat linkt naar het merk Topman">
-                            <h2>TOPMAN</h2>
+
                             <p>De herfst komt eraan</p>
-                            <button>SHOP NU</button>
+
                         </a>
-                    </aticle>
+                        <button aria-label="shop de topman">Shop nu</button>
+                    </article>
                 </li>
 
                 <li>
                     <article>
                         <a href="pagina2.html">
+                            <h3>De nieuwe utility</h3>
                             <img src="images/afbeeldingHomepage/Section3/Nieuweutility.png" alt="Afbeelding van een man in een streetwear outfit en linkt naar allerlei verschillende streatwear">
-                            <h2>DE NIEUWE UTILITY</h2>
                             <p>Streatwear-stijl</p>
-                            <button>SHOP NU</button>
                         </a>
+
+                        <button aria-label="shop de nieuwe utility">Shop nu</button>
                     </article>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <button><strong>DE ASOS APP</strong></button>
-            <p><strong>Favo item uitverkocht?</strong></p>
-           <p><strong>Krijg terug-op-voorraad melding in de app</strong></p>
-            <button><strong>DOWNLOAD NU</strong></button>
-        </section>
-
     </main>
 
+    <aside>
+        <h2 class="visually-hidden">Hier kan je meldingen aanzetten voor als een product is uitverkocht die je toch heel graag wilt hebben.</h2>
+        <button><strong>De asos app</strong></button>
+        <p><strong>Favo item uitverkocht?</strong></p>
+        <p><strong>Krijg terug-op-voorraad melding in de app</strong></p>
+        <button><strong>Download nu</strong></button>
+    </aside>
+
+    <aside>
+        <h2 class="visually-hidden">Wil je een jaar lang gratis leveringen op de volgende werkdag dan moet je op deze link drukken.</h2>
+        <p><img src="images/" alt="foto van asos premier logo"> asos premier</p>
+        <p><strong>Een jaar lang gratis levering op de volgende werkdag voor slechts € 20</strong></p>
+        <p>Algemene voorwaarden zijn van toepassing</p>
+    </aside>
+
     <footer>
-        <ul>
-            <li>
-                <h4>HELP & INFORMATIE</h4>
-            </li>
-            <li>Hulp</li>
-            <li>Volg je bestelling</li>
-            <li>Bezorging en retournering</li>
-            <li>Asos Premier</li>
-            <li>10% korting voor Studenten</li>
-            <li>Sitemap</li>
-        </ul>
 
-        <ul>
-            <li>
-                <h4>OVER ASOS</h4>
-            </li>
-            <li>Over ons</li>
-            <li>Vacatures</li>
-            <li>Bedrijfsverantwoordelijkheid</li>
-            <li>Website voor Investeerders</li>
-        </ul>
+        <h2 class="visually-hidden">service links en info over ons bedrijf</h2>
 
-        <ul>
-            <li>
-                <h4>MEER OVER ASOS</h4>
-            </li>
-            <li>Mobiele & ASOS apps</li>
-            <li>ASOS Marketplace</li>
-            <li>Cadeaubon</li>
-            <li>Black Friday</li>
-        </ul>
 
-        <ul>
-            <li>
-                <h4>WINKELEN VANUIT:</h4>
-            </li>
-            <li>Je bent in <img src="images/vlaggen/nederland.png" alt="De huidige taal van de website is nederlands"> <a href="index.html">&#124; VERANDER</a></li>
-            <li>Enkele van onze internationale websites:</li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/engeland.png" alt="Veranderd de taal van de website naar het Brits Engels">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/spanje.png" alt="Veranderd de taal van de website naar het Spaans">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/duitsland.png" alt="Veranderd de taal van de website naar het Duits">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/australie.png" alt="Veranderd de taal van de website naar het Australiaans Engels">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/frankrijk.png" alt="Veranderd de taal van de website naar het Frans">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/amerika.png" alt="Veranderd de taal van de website naar het Amerikaans">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/denmark.png" alt="Veranderd de taal van de website naar het Deens">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/italie.png" alt="Veranderd de taal van de website naar het Italiaans">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/polen.png" alt="Veranderd de taal van de website naar het Pools">
-                </a></li>
-            <li><a href="index.html">
-                    <img src="images/vlaggen/zweden.png" alt="Veranderd de taal van de website naar het Zweeds">
-                </a></li>
+        <section>
+            <h3>Help & informaite</h3>
+            <!-- niet schreeuwen -->
 
-        </ul>
+            <ul>
+                <li>Hulp</li>
+                <li>Volg je bestelling</li>
+                <li>Bezorging en retournering</li>
+                <li>Asos Premier</li>
+                <li>10% korting voor Studenten</li>
+                <li>Sitemap</li>
+            </ul>
+        </section>
+
+
+
+        <section>
+            <h3>Over asos</h3>
+            <ul>
+                <li>Over ons</li>
+                <li>Vacatures</li>
+                <li>Bedrijfsverantwoordelijkheid</li>
+                <li>Website voor Investeerders</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h3>Meer over asos</h3>
+
+            <ul>
+
+                <li>Mobiele & Asos apps</li>
+                <li>Asos Marketplace</li>
+                <li>Cadeaubon</li>
+                <li>Black Friday</li>
+            </ul>
+
+
+        </section>
+
+        <section>
+
+            <h3>Winkelen vanuit:</h3>
+
+               <p>Je bent in <img src="images/vlaggen/nederland.png" alt="De huidige taal van de website is nederlands"> <a href="index.html">&#124; verander</a></p>
+
+               <p>Enkele van onze internationale websites:</p>
+
+
+
+                <ul>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/engeland.png" alt="Veranderd de taal van de website naar het Brits Engels">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/spanje.png" alt="Veranderd de taal van de website naar het Spaans">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/duitsland.png" alt="Veranderd de taal van de website naar het Duits">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/australie.png" alt="Veranderd de taal van de website naar het Australiaans Engels">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/frankrijk.png" alt="Veranderd de taal van de website naar het Frans">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/amerika.png" alt="Veranderd de taal van de website naar het Amerikaans">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/denmark.png" alt="Veranderd de taal van de website naar het Deens">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/italie.png" alt="Veranderd de taal van de website naar het Italiaans">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/polen.png" alt="Veranderd de taal van de website naar het Pools">
+                    </a></li>
+                <li><a href="index.html">
+                        <img src="images/vlaggen/zweden.png" alt="Veranderd de taal van de website naar het Zweeds">
+                    </a></li>
+
+            </ul>
+
+        </section>
 
     </footer>
 
     <script src="scripts/script.js"></script>
 </body>
-
 
 </html>

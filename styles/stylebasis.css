@@ -7,22 +7,60 @@
     box-sizing: border-box;
 }
 
-
-
-
-
+@font-face {
+    font-family; FuturaCyrillicMedium;
+    src: url(../lettertype/FuturacyrillicMedium.woff);
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
     /* startje */
+    color-scheme: light dark;
+
     --color-text: #111;
     --color-background: #eee;
+    --accent-color:var(--color-theme);
+
+    --bg-root1:light-dark(Pink, mediumvioletred);
+    --bg-root2:light-dark(orange, maroon);
+    --bg-form:light-dark(#fff6, #0006);
+    --color-focus:light-dark(dodgerblue, dodgerblue);
+
+    --zwart:black;
+    --wit:white;
+    --gradient:linear-gradient(90deg, rgba(255, 56, 92, 1) 0%, rgba(247, 153, 186, 1) 100%);
+
+
+
+
+    /* meer dingen toevoegen van kleuren en tekstgrootten */
+}
+
+:root:has([value="light"]:checked) {
+    color-scheme:light;
+}
+
+:root:has([value="dark"]:checked) {
+    color-scheme:dark;
+     --color-text: #fff;
+}
+
+
+/* overgenomen van: https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 body {
-    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+    font-family: "FuturaCyrillicMedium", ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,6 +76,45 @@ header {
     /* zodat het mooi gecentreerd is met de header box */
 }
 
+header button {
+    cursor: pointer;
+
+}
+
+header button:nth-of-type(1) {
+    background-color: transparent;
+}
+
+header button:nth-of-type(1) img {
+    width: 2em;
+    height: 2em;
+}
+
+
+header nav:nth-of-type(1) {
+    padding: 1em;
+    display: grid;
+    align-content: start;
+    gap: 1em;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    translate: -100% 0%;
+    transition: translate .3s;
+    z-index: 1;
+}
+
+nav:nth-of-type(1) ul {
+/*    list-style-type: none;*/
+}
+
+header nav.toonMenu {
+    translate: 0% 0%;
+}
+
 header img {
     width: 4em;
     /*grootte van de afbeelding*/
@@ -45,8 +122,9 @@ header img {
 
 main {
     max-width: 80em;
-    margin: 0 auto;
-    padding: 20px;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 
@@ -55,51 +133,54 @@ nav {
     /* zorgt ervoor dat de icoontjes altijd recht blijven staan */
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    /*zodat het naast elkaar staat en niet onder elkaar. */
-}
-
-nav ul li {
-    width: 1.5em;
-    height: 1.5em;
-    display: flex;
-    margin-left: 1.2em;
-}
-
 nav a {
     color: white;
     text-decoration: none;
     padding: 0.5em;
 }
 
+nav:nth-of-type(1) li {
+    text-decoration: none;
+}
+
+nav:nth-of-type(2) ul {
+    list-style-type: none;
+    display: flex;
+    /*zodat het naast elkaar staat en niet onder elkaar. */
+}
+
+nav:nth-of-type(2) ul li {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    margin-left: 1.2em;
+}
+
 footer {
     display: flex;
-    justify-content: space-around; /* zorgt ervoor dat het netjes gelijk gehouden wordt binnen de grid */
+    justify-content: space-around;
+    /* zorgt ervoor dat het netjes gelijk gehouden wordt binnen de grid */
     background-color: #eeeeee;
     font-size: 0.6em;
     width: 100%;
+
 }
+
+
 
 footer ul {
     list-style-type: none;
     max-width: 80em;
+    padding: 0;
 }
 
-footer li {
-    padding: 0.5em;
-}
-
-footer li img {
+footer section:nth-of-type(4) img {
     display: inline-flex;
     height: 0.8em;
     width: 0.8em;
     margin: 0;
     padding: 0;
-
 }
-
-footer:nth-of-type(1) img {
-    display: inline;
-
+footer section:nth-of-type(5) li {
+    display: inline-flex;
+}
