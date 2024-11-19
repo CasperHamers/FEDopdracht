@@ -129,7 +129,7 @@ ben hier dus ook helaas niet bij geweest.
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Eigenlijk ging alles tot nu toe wel goed. heb voornamelijk de html gedaan. Alleen kleine dingetjes die nog niet zo goed gingen maar die zullen in dit gesprek wel uitgelegd worden.
 
 
   ### Agenda voor meeting
@@ -153,10 +153,13 @@ ben hier dus ook helaas niet bij geweest.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1 Veel meer in de root stoppen zoals font family kleuren en achtergrond kleuren.
+  - punt 2 je kan een hamburger menu toevoegen doormiddel van een icoon of door middel van werken met span.
+  - punt 3 hoe maak je een carousel we hebben een voorbeeld gekregen en het is goed uitgelegd.
+  - punt 4 je kan flex wrap gebruiken om eventueel 2 secties uit elkaar te krijgen.
+  - punt 5 hoe zorg je ervoor dat je foto verandert zodra je ergens op drukt. Dat doe je doormiddel van :has toe te voegen aan je css.
+  - doormiddel van details toe te voegen aan je html
+  - controls toevoegen aan html en vervolgens met z-index de video achter de hamburger menu te zetten.
 
 </details>
 
@@ -170,26 +173,36 @@ ben hier dus ook helaas niet bij geweest.
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  de website responsive maken ging eigenlijk verbazingwekkend goed. Begreep de @media meteen en gelukkig werkte het ook meteen. hier voorbeelden van responsive design:
+  <img src="readme-images/readmefotos/procesverslagfotos/1fullscreen.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/1mobile.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/2fullscreen.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/2mobile.png" width="375px" alt="">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yasmine Uaali  | Sinem Uslu         |Noah Baggerman| Casper Hamers    |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |twee sections    | en dit             | en ik dit    | en dan ik dat    |
+  |naast elkaar
+  krijgen         | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Yasmine: Ze had een vraag over haar footer hoe ze die mooi responsive houdt met de rest van haar website.
+sinem: Binnen haar nav bar doet haar h1 gek die staat niet op een mooie plek en die verspringt ook telkens.
+Casper: Hoe zorg ik ervoor dat als ik mijn h2 onder mijn p wil zetten maar dat niet zo schrijf in de html.
+navigatie balk responsive krijgen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - punt 1 gebruik maken van transform x en y om dingen schruin te plaatsen en op andere plekken neer te zetten
+  - punt 2 display flex gebruiken en dan met order te werk gaan. je begint op 0 en dan kiezen -1 of 1 ligt eraan welke je eerst boven wilt hebben.
+  - z-index gebruiken voor dingen over andere dingen heen te laten gaan dus bijvoorbeeld een pop up heeft dan z-index 1
+  - aside gebruiken voor dingen die buiten je main vallen dus ook soort van pop ups en reclames etc.
+  - absolute en relative zo kan je dingen in elkaar plaatsen. bijvoorbeeld tekst in een foto.
 
 </details>
 
@@ -217,26 +230,19 @@ ben hier dus ook helaas niet bij geweest.
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  voortgang 3 was voor mij bij het officiele inlever moment dus het eindgesprek. Daarom heb ik dit niet met een groepje kunnen doen dus heb ik ook geen vragen van hun kunnen opschrijven. Eigenlijk ging het allemaal wel oke. moeilijk maar oke. Ik heb nog veel moeite met mijn navigatie balk en met pagina 2 een foto en daarnaast de informatie neer te zetten. zoals dit: 
+  <img src="readme-images/readmefotos/procesverslagfotos/gesprek3foto1.png" width="375px" alt="">
+  ook lukt het mij niet om dezelfde navigatie te krijgen zoals op asos site zelf.
+  <img src="readme-images/readmefotos/procesverslagfotos/nav1.png" width="375px" alt="">
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  <img src="readme-images/readmefotos/procesverslagfotos/nav2.png" width="375px" alt="">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1 om de nav balk te wisselen zoals op de fotos hierboven moet je gebruik maken van flex-wrap en van de @media om de flexwrap aan te roepen wanneer die moet komen
+  - punt 2 om die 2 dingen naast elkaar te zetten op computer moet je gebruik gaan maken van een grid met grid columns om zo alles een plekje te geven. Hierbij moet je een div gebruiken en is dat dan ook toegestaan om het naast elkaar te zetten.
+  - vervolgens blijkt het dat ik nog echt wel meer kleuren moet toevoegen aan mijn root en ook light dark modus moet toevoegen daar loop ik nog erg mee achter.
 
 </details>
 
