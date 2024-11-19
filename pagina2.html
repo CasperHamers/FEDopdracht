@@ -10,194 +10,312 @@
 </head>
 
 <body>
- <header>
+
+    <header>
+
 
         <button aria-hidden="true"><img src="images/icon/hamburgermenu.png" alt=""></button>
+        <a href="index.html"></a>
 
         <nav>
             <button aria-hidden="true">sluit</button>
+            <button>Dames</button>
+            <button>Heren</button>
             <ul>
                 <li>
-                    <p>Startpagina</p>
-
+                    <a href="">Startpagina</a>
                 </li>
                 <li>
-                    <p>tot 30% Korting!</p>
-
+                    <a href="">tot 30% korting!</a>
                 </li>
                 <li>
-                    <p>Nieuw</p>
-
+                    <a href="">Nieuw</a>
                 </li>
                 <li>
-                    <p>Kleding</p>
+                    <a href="">Kleding</a>
                 </li>
                 <li>
-                    <p>Trending</p>
+                    <a href="">Trending</a>
                 </li>
                 <li>
-                    <p>Accessoires</p>
+                    <a href="">Accessoires</a>
                 </li>
                 <li>
-                    <p>Sneakers</p>
+                    <a href="">Sneakers</a>
                 </li>
                 <li>
-                    <p>Schoenen</p>
+                    <a href="">Schoenen</a>
                 </li>
                 <li>
-                    <p>Sportkleding</p>
+                    <a href="">Sportkleding</a>
                 </li>
                 <li>
-                    <p>Merken</p>
+                    <a href="">Marketplace</a>
                 </li>
                 <li>
-                    <p>Face + Body</p>
+                    <a href="">Vintage & Merken</a>
                 </li>
                 <li>
-                    <p>Marketplace</p>
-                    <p>Vintage & Merken</p>
+                    <a href="">Sale: Tot 60% korting</a>
                 </li>
                 <li>
-                    <p>Sale: Tot 60% korting</p>
+                    <a href="">Meer Asos</a>
                 </li>
-                <li>
-                    <p>Meer Asos</p>
-                </li>
-
-
             </ul>
         </nav>
 
-        <a href="index.html">
-            <img src="images/asos%20logo.svg" alt="Logo van asos"></a>
-        <nav>
-            <ul>
-                <li> <img src="images/icon/search.png" alt="zoekbalk"></li>
-                <li> <img src="images/icon/profile-image.png" alt="zoekbalk"></li>
-                <li> <img src="images/icon/heart.png" alt="Favorieten"></li>
-                <li> <img src="images/icon/briefcase.png" alt="winkelmandje"></li>
-            </ul>
-        </nav>
+        <a href="index.html"><img src="images/asos%20logo.svg" alt="Logo van Asos, als je hier op klikt ga je terug naar het begin scherm."></a>
+
+        <form>
+            <input type="text" placeholder="Zoek naar items en merken">
+
+        </form>
+        <ul>
+            <li><img src="images/icon/search.png" alt="Zoeken"></li>
+            <li> <img src="images/icon/profile-image.png" alt="Profiel"></li>
+            <li> <img src="images/icon/heart.png" alt="Favorieten"></li>
+            <li> <img src="images/icon/briefcase.png" alt="winkelmandje"></li>
+        </ul>
     </header>
-
 
     <main>
 
-        <h1 class="visually-hidden">U bevindt zich nu op de pagina van een herenkleding product. Dit is een t-shirt.</h1>
+        <h1 class="visually-hidden">U bevindt zich nu op de pagina van een herenkleding product. specifiek op de pagina van een groen t-shirt dat is aangeklikt.</h1>
+
 
         <section>
-            <picture>
-                <img src="images/afbeeldingHomepage/Section2/Groenshirt.png" alt="Jongen met een groen shirt">
-            </picture>
-            <h2>ASOS DESIGN - Oversized recht T-shirt van 220g/m² zware stof met straatprint in groen met wassing</h2>
+            <h2><strong>Asos design</strong> - Oversized recht T-shirt van 220g/m² zware stof met straatprint in groen met wassing</h2>
+            <div>
+                <h3>€24.99</h3>
 
-            <h3>€24.99</h3>
+                <h3>Maat:</h3>
+                <select name="dropdown" id="maat-selecteren">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button type="button">Toevoegen aan Winkelwagen</button>
 
-            <h3>Maat:</h3>
-            <select name="dropdown" id="maat-selecteren">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-            </select>
-            <button type="button">Toevoegen aan Winkelwagen</button>
+                <details>
+                    <summary>Productdetails</summary>
+                    <p>T-Shirts en hemdjes van <strong>Asos Design</strong></p>
+                    <p>Terug naar de basis</p>
+                    <p>Grafische print</p>
+                    <p>Met ronde hals</p>
+                    <p>Korte mouwen</p>
+                    <p>Rechte pasvorm</p>
+                    <p>Productcode: 138946394</p>
+                </details>
 
-            <select name="dropdown" id="productdetails">
-                <option value="details">Productdetails</option>
-            </select>
-            <br>
-            <select name="dropdown" id="merk">
-                <option value="merk">Merk</option>
-            </select>
-            <br>
-            <select name="dropdown" id="maat-pasvorgm">
-                <option value="maat">Maat & pasvorm</option>
-            </select>
-            <br>
-            <select name="dropdown" id="Zorg voor mij">
-                <option value="Zorg">Zorg voor mij</option>
-            </select>
-            <br>
-            <select name="dropdown" id="overmij">
-                <option value="overmij">Over mij</option>
-            </select>
+                <details>
+                    <summary>Merk</summary>
+                    <p>Dit is <strong>Asos design</strong> – jouw favoriet voor de nieuwste trends, ongeacht wie je bent, waar je vandaan komt en wat je van plan bent. Ons wereldwijde merk, exclusief verkrijgbaar bij ASOS, is er voor jou, en is ook beschikbaar in Plus en Tall. Door ons ontworpen, door jou gestyled.</p>
+                </details>
+
+                <details>
+                    <summary>Maat & Pasvorm</summary>
+                    <p>Lengte van het model: 191cm / 6'3''</p>
+                    <p>Het model draagt: M - Chest 40</p>
+                    <p>Maatwijzer</p>
+                    <p>Nog steeds niet zeker welke maat je nodig hebt? Bekijk onze maatwijzer.</p>
+                </details>
+
+                <details>
+                    <summary>Zorg voor mij</summary>
+                    <p>Machinewas volgens de voorschriften op het waslabel.</p>
+                </details>
+
+                <details>
+                    <summary>Over mij</summary>
+                    <p>Jersey: zacht en elastisch</p>
+                    <p>Materiaal: 100% katoen.</p>
+                </details>
+            </div>
+            <img src="images/afbeeldingHomepage/Section2/Groenshirt.png" alt="Jongen die het groene shirt aan heeft van het merk Asos design">
+
         </section>
 
+
         <section>
+            <h2 class="visually-hidden">hier heb je een rij van 10 producten dit zijn producten die lijken op het uitgekozen t-shirt</h2>
+
             <h2>Dit vind je misschien ook leuk</h2>
             <ul>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 1</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto1.avif" alt="Afbeelding van een rood t-shirt met een bloem op de borst en een grafische foto met bloemen op de achterkant">
+                    <button>&#9825;</button>
+                    <p>€20,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 2</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto2.avif" alt="wit t-shirt met lange mouwen">
+                    <button>&#9825;</button>
+                    <p>€25,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 3</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto3.avif" alt="Grijs oversized t-shirt met op de voorkant fairfax en een logo met het jaar 1909 onder het logo.">
+                    <button>&#9825;</button>
+                    <p>€30,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 4</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto4.avif" alt="Zwart oversized t-shirt met witte logo's op de achterkant.">
+                    <button>&#9825;</button>
+                    <p>€35,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 5</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto5.avif" alt="Navi blauw t-shirt met tekst en logo's op de voorkant.">
+                    <button>&#9825;</button>
+                    <p>€40,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 6</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto6.avif" alt="Wit t-shirt met lange mouwen met een grote 3 op de achterkant.">
+                    <button>&#9825;</button>
+                    <p>€45,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 7</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto7.avif" alt="Wit t-shirt met 3 tomaten op de voorkant en wat tekst onder de tomaten.">
+                    <button>&#9825;</button>
+                    <p>€50,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 8</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto8.avif" alt="Zwart t-shirt met tekst op de voorkant.">
+                    <button>&#9825;</button>
+                    <p>€55,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 9</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto9.avif" alt="Creme kleurig t-shirt met ethletics op de voorkant en een mannetje die rent.">
+                    <button>&#9825;</button>
+                    <p>€60,00</p>
                 </li>
-                <li><a href=""><img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </a>
-                    <img src="" alt="">
+                <li>
+                    <h3>Product 10</h3>
+                    <img src="images/afbeeldingenpagina2/gridfoto10.avif" alt="Rood t-shirt met blauwe korte mouwen en een blauwe bloem in het midden aan de voorkant.">
+                    <button>&#9825;</button>
+                    <p>€65,00</p>
                 </li>
-
             </ul>
         </section>
 
+        <h2 class="visually-hidden">Hier is een look voor jou al samen gesteld door de site zelf. Eventueel is het iets wat je leuk vindt.</h2>
+
         <section>
-            <h2>Shop de look</h2>
+            <h2>Shop de Look</h2>
+            <p>Shop de volledige outfit van </p>
+            <img src="images/afbeeldingHomepage/Section2/Groenshirt.png" alt="Foto van het groene t-shirt">
+
+
+            <div>
+                <ul>
+                    <li id="grijs"><img src="images/afbeeldingenpagina2/sectie3/Volledigeoutfit.png" alt="Foto van een volledige outfit grijs t-shirt met borduur aan de voorkant. Donkerblauwe broek, ketting en ring." /></li>
+                    <li id="rood"><img src="images/afbeeldingenpagina2/sectie3/Ketting.png" alt="zilvere dubbele ketting middel groot." /></li>
+                    <li id="kobalt"><img src="images/afbeeldingenpagina2/sectie3/Ring.png" alt="zilvere ring." /></li>
+                </ul>
+
+                <nav>
+                    <a href="#grijs">grijs</a>
+                    <a href="#rood">rood</a>
+                    <a href="#kobalt">kobalt</a>
+                </nav>
+            </div>
         </section>
 
         <section>
+
+            <h2 class="visually-hidden">Hier vind je een carousel met allerlei andere items die mensen ook leuk vinden.</h2>
+
             <h2>Andere mensen kochten ook</h2>
-            <ul></ul>
+            <ul>
+                <li id="afbeelding1">
+                    <h4>€ 24,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/carouselfoto1.avif" alt="Afbeelding van een jongen met een groen shirt aan">
+                        <p>Asos design - Oversized recht T-shirt van 220g/m² zware stof met straatprint in groen met wassing</p>
+
+                    </a>
+                </li>
+                <li>
+                    <h4>€ 32,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingHomepage/Section2/natuurprintshirt.png" alt="Afbeelding van een jongen die een natuurprint shirt draagt met het nummer 14 op de rug">
+                        <p>Asos design - Oversized recht T-shirt van sportief mesh met print</p>
+                    </a>
+
+                </li>
+                <li>
+                    <h4>€ 27,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/lichtbruinvest.png" alt="Afbeelding van een jongen met een oversized teddy licht bruin vest.">
+                        <p>Asos design - MExtreem oversized trui van borg materiaal.</p>
+                    </a>
+                </li>
+                <li>
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/groenetruimetstreep.png" alt="Jongen met een groene trui met een blauwe streep door het midden en een zwarte broek en een zwarte tas.">
+                        <p>Reclaimed Vintage - Oversized broek in het zwart.</p>
+                    </a>
+                </li>
+                <li id="afbeelding5">
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/oversizedcremetrui.png" alt="Jongen met een oversized creme kleurige trui en een nette broek met een pet op.">
+                        <p>Asos design - Nette broek met rechte pijpen.</p>
+                    </a>
+                </li>
+                <li>
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/streepjesoverhemd.png" alt="Jongen met een overhemd die zwart is met bruine strepen.">
+                        <p>Asos design - Oversized gestreept overhemd.</p>
+                    </a>
+                </li>
+                <li id="afbeelding7">
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/kakker.png" alt="Jongen met een lichtblauw overhemd en een trui eroverheen met een grijze nette broek aan.">
+                        <p>Asos design - smaltoelopende broek in het grijs.</p>
+                    </a>
+                </li>
+
+                <li>
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/roodvest.png" alt="Jongen met een rode fleece trui aan met een halve rits.">
+                        <p>Asos design - Oversized fleece sweatshirt met halve zip up.</p>
+                    </a>
+                </li>
+
+                <li id="afbeelding9">
+                    <h4>€ 34,99</h4>
+                    <a href="pagina2.html">
+                        <img src="images/afbeeldingenpagina2/sectie4/groenvest.png" alt="Jongen met een groene fleece trui aan met een halve rits.">
+                        <p>Asos design - Oversized fleece sweatshirt met halve zip up.</p>
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+            <nav>
+                <ul>
+                    <li><a href="#afbeelding1"></a></li>
+                    <li><a href="#afbeelding5"></a></li>
+                    <li><a href="#afbeelding7"></a></li>
+                    <li><a href="#afbeelding9"></a></li>
+                </ul>
+            </nav>
+
         </section>
 
     </main>
@@ -209,7 +327,6 @@
 
         <section>
             <h3>Help & informaite</h3>
-            <!-- niet schreeuwen -->
 
             <ul>
                 <li>Hulp</li>
@@ -251,9 +368,14 @@
         <section>
 
             <h3>Winkelen vanuit:</h3>
+
+            <p>Je bent in <img src="images/vlaggen/nederland.png" alt="De huidige taal van de website is nederlands"> <a href="index.html">&#124; verander</a></p>
+
+            <p>Enkele van onze internationale websites:</p>
+
+
+
             <ul>
-                <li>Je bent in <img src="images/vlaggen/nederland.png" alt="De huidige taal van de website is nederlands"> <a href="index.html">&#124; verander</a></li>
-                <li>Enkele van onze internationale websites:</li>
                 <li><a href="index.html">
                         <img src="images/vlaggen/engeland.png" alt="Veranderd de taal van de website naar het Brits Engels">
                     </a></li>
@@ -289,6 +411,19 @@
 
         </section>
 
+        <section>
+            <h2 class="visually-hidden">service links en info over ons bedrijf</h2>
+            <p> © 2024 ASOS</p>
+            <a href="#">ASOS gegevens</a>
+            <a href="#">Algemene Voorwaarden</a>
+            <a href="#">Privacy & Cookies</a>
+            <a href="#">Toegankelijkheid</a>
+        </section>
+
     </footer>
+
+
     <script src="scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>

@@ -5,10 +5,12 @@
 *::after,
 *::before {
     box-sizing: border-box;
+
 }
 
 @font-face {
-    font-family; FuturaCyrillicMedium;
+    font-family;
+    FuturaCyrillicMedium;
     src: url(../lettertype/FuturacyrillicMedium.woff);
 }
 
@@ -19,18 +21,37 @@
     /* startje */
     color-scheme: light dark;
 
+    --zwart: #20211A;
+    --wit: #FBFCF8;
+    --grijskleur: #ddd;
+    --pastelgroen: #77DD77;
+    --bruintekst: #5C4033;
+    --footerachtergrond: #eee;
+    --tweedetekst: #666;
+     --shopdelook: #f7f7f7;
     --color-text: #111;
     --color-background: #eee;
-    --accent-color:var(--color-theme);
+    --accent-color: var(--color-theme);
 
-    --bg-root1:light-dark(Pink, mediumvioletred);
-    --bg-root2:light-dark(orange, maroon);
-    --bg-form:light-dark(#fff6, #0006);
-    --color-focus:light-dark(dodgerblue, dodgerblue);
+    --bg-root1: light-dark(Pink, mediumvioletred);
+    --bg-root2: light-dark(orange, maroon);
+    --bg-form: light-dark(#fff6, #0006);
+    --color-focus: light-dark(dodgerblue, dodgerblue);
+    --color-link: light-dark(var(--zwart), var(--wit));
+    --color-button: light-dark(var(--wit), var(--zwart));
+    --color-tweedetekst: light-dark(var(--tweedetekst), var(--pastelgroen)); /* Pastelgroen in dark mode */
+    --color-footer1: light-dark(var(--footerachtergrond), var(--pastelgroen));
+    --color-footer2: light-dark(var(--tweedetekst), var(--bruintekst));
+    --color-shopdelook: light-dark(var(--bruintekst), var(--shopdelook));
+    --color-sectie3: light-dark(var(--grijskleur), var(--footerachtergrond));
 
-    --zwart:black;
-    --wit:white;
-    --gradient:linear-gradient(90deg, rgba(255, 56, 92, 1) 0%, rgba(247, 153, 186, 1) 100%);
+
+    --gradient: linear-gradient(90deg, rgba(255, 56, 92, 1) 0%, rgba(247, 153, 186, 1) 100%);
+    --tweedetekstkleur: #555;
+    --winkelwagen: #018849;
+    --hover: rgba(255, 0, 0, 0.8);
+    --navigatie: #525050;
+    --transparent: transparent;
 
 
 
@@ -39,12 +60,12 @@
 }
 
 :root:has([value="light"]:checked) {
-    color-scheme:light;
+    color-scheme: light;
 }
 
 :root:has([value="dark"]:checked) {
-    color-scheme:dark;
-     --color-text: #fff;
+    color-scheme: dark;
+    --color-text: #fff;
 }
 
 
@@ -64,60 +85,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-header {
-    background-color: #2d2d2d;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    display: flex;
-    /*zodat de afbeelding naast de tekst kan staan en niet onder elkaar komt te staan, is niet mooi */
-    align-items: center;
-    /* zodat het mooi gecentreerd is met de header box */
-}
-
-header button {
-    cursor: pointer;
-
-}
-
-header button:nth-of-type(1) {
-    background-color: transparent;
-}
-
-header button:nth-of-type(1) img {
-    width: 2em;
-    height: 2em;
-}
-
-
-header nav:nth-of-type(1) {
-    padding: 1em;
-    display: grid;
-    align-content: start;
-    gap: 1em;
-    background-color: white;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    translate: -100% 0%;
-    transition: translate .3s;
-    z-index: 1;
-}
-
-nav:nth-of-type(1) ul {
-/*    list-style-type: none;*/
-}
-
-header nav.toonMenu {
-    translate: 0% 0%;
-}
-
-header img {
-    width: 4em;
-    /*grootte van de afbeelding*/
 }
 
 main {
@@ -127,60 +95,254 @@ main {
     padding-right: 1em;
 }
 
+/* Staandaard dingetjes */
 
-nav {
-    margin-left: auto;
-    /* zorgt ervoor dat de icoontjes altijd recht blijven staan */
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+    --color-link: light-dark(var(--zwart), var(--wit));
+
 }
 
-nav a {
-    color: white;
+ul {
+    padding: 0;
+}
+
+a {
     text-decoration: none;
-    padding: 0.5em;
+    color: var(--color-link);
 }
 
-nav:nth-of-type(1) li {
-    text-decoration: none;
+p {
+    margin: 0;
+    margin-bottom: 1em;
+    ;
+}
+button {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7em;
 }
 
-nav:nth-of-type(2) ul {
-    list-style-type: none;
+
+
+
+
+
+header {
+    background-color: #2d2d2d;
     display: flex;
-    /*zodat het naast elkaar staat en niet onder elkaar. */
+    align-items: center;
+
 }
 
-nav:nth-of-type(2) ul li {
+header > a {
+    margin-right: auto;
+}
+
+
+header button:nth-of-type(1) img {
+    width: 2em;
+    height: 2em;
+}
+
+header button {
+    cursor: pointer;
+
+}
+
+header ul {
+    cursor: pointer;
+}
+
+header button:nth-of-type(1) {
+    background-color: var(--transparent);
+}
+
+
+header nav {
+    position: fixed;
+    inset: 0;
+    background-color: var(--navigatie);
+    translate: -100%;
+    z-index: 1;
+    width: 40%;
+}
+
+header nav a {
+    column-gap: 10em;
+}
+
+header nav.toonMenu {
+    translate: 0% 0%;
+}
+
+header > a img {
+    width: 5em;
+
+}
+
+header > button {
+    background-color: var(--transparent);
+    color: var(--wit);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: none;
+}
+
+header > ul {
+    display: flex;
+    gap: 1em;
+    margin-right: 2em;
+    list-style: none;
+}
+
+
+header > ul li img {
     width: 1.5em;
     height: 1.5em;
+}
+
+header > button:hover {
+    color: var(--footerachtergrond);
+}
+
+header form {
     display: flex;
-    margin-left: 1.2em;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 50em;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    /* zorgt ervoor dat het netjes gelijk gehouden wordt binnen de grid */
-    background-color: #eeeeee;
-    font-size: 0.6em;
-    width: 100%;
-
+/* Inputveld in de zoekbalk */
+header form input {
+    border: none;
+    outline: none;
+    flex-grow: 1; /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow */
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 2em;
 }
 
 
 
-footer ul {
-    list-style-type: none;
-    max-width: 80em;
-    padding: 0;
+
+
+
+
+
+    footer {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /* zorgt ervoor dat het netjes gelijk gehouden wordt binnen de grid */
+        background-color: var(--color-footer1);
+        font-size: 0.8em;
+        width: 100%;
+        color: var(--color-footer2);
+        flex-wrap:wrap;
+        align-items: flex-start;
+        width: 100%
+    }
+
+
+
+    footer ul {
+        list-style-type: none;
+        max-width: 80em;
+        padding: 0;
+    }
+
+    footer section:nth-of-type(4) img {
+        display: inline-flex;
+        height: 0.8em;
+        width: 0.8em;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer section:nth-of-type(4) li {
+        display: inline-flex;
+    }
+
+    footer section:last-of-type {
+        text-align: center;
+        padding: 1em 0;
+        border-top: 0.1em solid #ccc;
+        /* Lijn boven de laatste footer */
+        flex-basis: 100%; /* https://www.w3schools.com/cssref/css3_pr_flex-basis.php Zorgt ervoor dat de laatste sectie onderaan komt te staan. */
+    }
+
+
+    footer section:last-of-type p {
+        color: var(--zwart);
+        display: inline-flex;
+    }
+
+    footer section:last-of-type a {
+        text-align: right;
+        color: #2d2d2d;
+        text-decoration: none;
+        margin: 0 0.8em;
+    }
+
+    footer section:last-of-type a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+@media (width > 60em) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header > button:nth-of-type(1) {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        translate: 0;
+        order: 1;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin: 0;
+        padding: 0;
+        list-style-type: "";
+    }
+
+    header nav button:first-child {
+        display: none;
+    }
 }
 
-footer section:nth-of-type(4) img {
-    display: inline-flex;
-    height: 0.8em;
-    width: 0.8em;
-    margin: 0;
-    padding: 0;
+
+@media (width < 60em) {
+    footer section:not(:last-of-type) {
+        display: none;
+    }
+
+        footer section:last-of-type {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
 }
-footer section:nth-of-type(5) li {
-    display: inline-flex;
-}
+
+
+@media (width < 40em) {
+    header form input {
+        display: none;
+    }
+
