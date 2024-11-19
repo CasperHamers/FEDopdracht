@@ -174,9 +174,13 @@ ben hier dus ook helaas niet bij geweest.
 
   ### Stand van zaken
   de website responsive maken ging eigenlijk verbazingwekkend goed. Begreep de @media meteen en gelukkig werkte het ook meteen. hier voorbeelden van responsive design:
+  
   <img src="readme-images/readmefotos/procesverslagfotos/1fullscreen.png" width="375px" alt="">
+  
   <img src="readme-images/readmefotos/procesverslagfotos/1mobile.png" width="375px" alt="">
+  
   <img src="readme-images/readmefotos/procesverslagfotos/2fullscreen.png" width="375px" alt="">
+  
   <img src="readme-images/readmefotos/procesverslagfotos/2mobile.png" width="375px" alt="">
 
 
@@ -231,8 +235,11 @@ navigatie balk responsive krijgen.
 
   ### Stand van zaken
   voortgang 3 was voor mij bij het officiele inlever moment dus het eindgesprek. Daarom heb ik dit niet met een groepje kunnen doen dus heb ik ook geen vragen van hun kunnen opschrijven. Eigenlijk ging het allemaal wel oke. moeilijk maar oke. Ik heb nog veel moeite met mijn navigatie balk en met pagina 2 een foto en daarnaast de informatie neer te zetten. zoals dit: 
+  
   <img src="readme-images/readmefotos/procesverslagfotos/gesprek3foto1.png" width="375px" alt="">
+  
   ook lukt het mij niet om dezelfde navigatie te krijgen zoals op asos site zelf.
+  
   <img src="readme-images/readmefotos/procesverslagfotos/nav1.png" width="375px" alt="">
 
   <img src="readme-images/readmefotos/procesverslagfotos/nav2.png" width="375px" alt="">
@@ -260,19 +267,66 @@ navigatie balk responsive krijgen.
 
 
   ### Dit ging goed/Heb ik geleerd:
-  Korte omschrijving met plaatjes
+wat goed ging: 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+1. op grote schaal de gehele html.
+2. responsive maken met @media.
+3. goed gebruik maken van de secties in html en css om alles duidelijk uit elkaar te houden.
+4. na even puzzelen de light dark toevoegen.
 
+de afbeeldingen:
+2.  responsive: 
+<img src="readme-images/readmefotos/procesverslagfotos/1fullscreen.png" width="375px" alt="">
+  
+  <img src="readme-images/readmefotos/procesverslagfotos/1mobile.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/2fullscreen.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/2mobile.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/responsive/headermobile.png" width="375px" alt="">
+    <img src="readme-images/readmefotos/procesverslagfotos/responsive/headerpc.png" width="375px" alt="">
+    <img src="readme-images/readmefotos/procesverslagfotos/responsive/headertablet.png" width="375px" alt="">
+      <img src="readme-images/readmefotos/procesverslagfotos/responsive/mobilenav.png" width="375px" alt="">
+      <img src="readme-images/readmefotos/procesverslagfotos/responsive/mobile3rijen.png" width="375px" alt="">
+        <img src="readme-images/readmefotos/procesverslagfotos/responsive/pc5rijen.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/responsive/mobilefooter.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/responsive/pcfooter.png" width="375px" alt="">
+
+  <img src="readme-images/readmefotos/procesverslagfotos/responsive/productmobile.png" width="375px" alt="">
+    <img src="readme-images/readmefotos/procesverslagfotos/responsive/productpc.png" width="375px" alt="">
+
+  3. light dark:
+<img src="readme-images/readmefotos/procesverslagfotos/lightdark/dark1" width="375px" alt="">
+<img src="readme-images/readmefotos/procesverslagfotos/lightdark/light1" width="375px" alt="">
+<img src="readme-images/readmefotos/procesverslagfotos/lightdark/dark2" width="375px" alt="">
+<img src="readme-images/readmefotos/procesverslagfotos/lightdark/light2" width="375px" alt="">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  wat niet goed ging:
+  1. de navigatiebalk toevoegen zoals het ook op de asos website is. Het werkt nu wel maar is niet optimaal.
+  2. het had heel lang geduurd voordat ik door had hoe ik met de variabele moest werken om kleuren toe tevoegen in de root. uiteindelijk viel het kwartje en toen begreep ik het.
+  3. carrousel's toevoegen en optimaal gebruiken zodat het ook lijkt op de website. Het werkt nu wel alleen is niet precies zoals ik het zou willen maar vind het erg moeilijk.
+  4. bij mijn tweede pagina. Shop de look. Ik begreep niet hoe ik het moest doen om het zo te krijgen zoals op de website. Dit is helaas niet gelukt.
+  5. bij de footer de onderdelen uit elkaar te halen en goed op te maken. Ik heb hier tot het laatste moment aan gezeten en het is uiteindelijk wel gelukt gelukkig.
+  6. bij mijn tweede pagina boven aan ook nog een carrousel toe te voegen om te veranderen van foto. Dit is mij ook niet gelukt maar had ik wel graag gewild.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+  de afbeeldingen:
+  1. de navigatie:
+      <img src="readme-images/readmefotos/procesverslagfotos/responsive/headermobile.png" width="375px" alt="">
+  <img src="readme-images/readmefotos/procesverslagfotos/responsive/headerpc.png" width="375px" alt="">
+    <img src="readme-images/readmefotos/procesverslagfotos/responsive/headertablet.png" width="375px" alt="">
+      <img src="readme-images/readmefotos/procesverslagfotos/responsive/mobilenav.png" width="375px" alt="">
+      
+  2.  <img src="readme-images/readmefotos/procesverslagfotos/root/variabele.png" width="375px" alt="">
 
+  3.  <img src="readme-images/readmefotos/procesverslagfotos/carrousel/carrousel1.png" width="375px" alt="">
+      <img src="readme-images/readmefotos/procesverslagfotos/carrousel/carrousel2.png" width="375px" alt="">
+  
+  4.  <img src="readme-images/readmefotos/procesverslagfotos/shopdelook/shopdelook.png" width="375px" alt="">
 
+  5.   <img src="readme-images/readmefotos/procesverslagfotos/responsive/mobilefooter.png" width="375px" alt="">
+        <img src="readme-images/readmefotos/procesverslagfotos/responsive/pcfooter.png" width="375px" alt="">
 
+  6. <img src="readme-images/readmefotos/procesverslagfotos/responsive/productmobile.png" width="375px" alt="">
+      <img src="readme-images/readmefotos/procesverslagfotos/responsive/productpc.png" width="375px" alt="">
 
 
 ## Bronnenlijst
@@ -284,9 +338,12 @@ navigatie balk responsive krijgen.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1 als iets niet helemaal duidelijk was of als ik geen andere bronnen kon vinden die mij geen goed en duidelijk voorbeeld gaven heb ik gebruik gemaakt van chat.gpt zodat ik een voorbeeld had zodat ik het beter kon begrijpen. Zelf heb ik niks gekopieerd en geplakt ik heb alles zelf getypt en zelf duidelijk gemaakt voor mijzelf.
+  2. bron 2 alles wat we gebruikt hebben in de lessen dus: https://dlo.mijnhva.nl/d2l/le/content/609314/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-2151194
+  3. https://www.w3schools.com/tags/att_video_loop.asp
+  4. https://www.w3schools.com/cssref/css3_pr_flex-shrink.php
+  5. https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
+  6. https://cssgradient.io/
 
 </details>
 
